@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-add-produtos {
+    background-color: #A6874E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.itens-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itens-cadastro h1 {
+    color: #593C22;
+
+}
