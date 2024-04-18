@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     margin: 0;
 }
 
@@ -17,9 +20,123 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    width: 300px;
 }
 
-.itens-cadastro h1 {
+
+.title-add-produtos {
     color: #593C22;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="file"] {
+    background-color: #F2F2F2;
+    color: #593C22;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.btn-add-produtos {
+    width: 200px;
+    background-color: #593C22;
+    color: #F2F2F2;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+
+}
+
+.icone-voltar {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    height: auto;
+    cursor: pointer;
+}
+
+.logo-add-produtos {
+    width: 123px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+}
+
+
+@media screen and (max-width: 1350px) {
+    .itens-cadastro {
+        width: 100%;
+    }
+
+    .logo-add-produtos {
+        width: 180px;
+        top: 90px;
+    }
+
+    .icone-voltar {
+        top: 15px;
+        left: 10px;
+
+    }
+
+    .itens-cadastro {
+        margin: 5px;
+        width: 400px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .itens-cadastro {
+        width: 100%;
+    }
+
+    .logo-add-produtos {
+        width: 180px;
+        top: 90px;
+    }
+
+    .icone-voltar {
+        top: 15px;
+        left: 10px;
+
+    }
+
+    .itens-cadastro {
+        margin: 5px;
+        width: 350px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .container-add-produtos {
+        width: 100%;
+    }
+
+    .logo-add-produtos {
+        width: 180px;
+        top: 90px;
+    }
+
+    .icone-voltar {
+        top: 15px;
+        left: 10px;
+
+    }
 
 }
