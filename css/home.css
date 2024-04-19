@@ -3,6 +3,7 @@
 :root {
   --marrom-alaranjada: #a6874e;
   --marrom-escuro: #593c22;
+  --marrom-claro: #bfa77a;
   --marrom-profundo: #402320;
   --cinza-claro: #f2f2f2;
   --branco: #ffffff;
@@ -64,7 +65,7 @@ h2 {
   align-items: center;
   height: 24rem;
   margin: 1rem 0 1rem 0;
-  background-color: var(--marrom-alaranjada);
+  background-color: var(--marrom-claro);
   border-radius: 2rem;
 }
 
