@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --marrom-alaranjada: #a6874e;
+    --marrom-escuro: #593c22;
+    --marrom-claro: #bfa77a;
+    --marrom-profundo: #402320;
+    --cinza-claro: #f2f2f2;
+    --branco: #ffffff;
+    --font-poppins: "Poppins", sans-serif;
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--font-poppins);
 
 }
 
 .container-add-produtos {
-    background-color: #A6874E;
+    background-color: var(--marrom-alaranjada);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,15 +38,15 @@
 
 
 .title-add-produtos {
-    color: #593C22;
+    color: var(--marrom-escuro);
     margin-bottom: 20px;
     text-align: center;
 }
 
 input[type="text"],
 input[type="file"] {
-    background-color: #F2F2F2;
-    color: #593C22;
+    background-color: var(--cinza-claro);
+    color: var(--marrom-escuro);
     margin: 5px;
     padding: 10px;
     border: none;
@@ -44,8 +56,8 @@ input[type="file"] {
 
 .btn-add-produtos {
     width: 200px;
-    background-color: #593C22;
-    color: #F2F2F2;
+    background-color: var(--marrom-escuro);
+    color: var(--cinza-claro);
     padding: 8px;
     border: none;
     border-radius: 8px;
