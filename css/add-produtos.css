@@ -32,14 +32,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    width: 300px;
+    padding: 1.25rem;
+    width: 18.75rem;
+
 }
 
 
 .title-add-produtos {
     color: var(--marrom-escuro);
-    margin-bottom: 20px;
+    margin-bottom: 0.75rem;
     text-align: center;
 }
 
@@ -47,93 +48,87 @@ input[type="text"],
 input[type="file"] {
     background-color: var(--cinza-claro);
     color: var(--marrom-escuro);
-    margin: 5px;
-    padding: 10px;
+    margin: 0.313rem;
+    padding: 0.625rem;
     border: none;
-    border-radius: 5px;
-    width: 300px;
+    border-radius: 0.313rem;
+    width: 18.75rem;
 }
 
 .btn-add-produtos {
-    width: 200px;
+    width: 12.75rem;
     background-color: var(--marrom-escuro);
     color: var(--cinza-claro);
-    padding: 8px;
+    padding: 0.5rem;
     border: none;
-    border-radius: 8px;
-    margin-top: 12px;
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
     cursor: pointer;
 
 }
 
 .icone-voltar {
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 0.5rem;
+    left: 0.625rem;
     height: auto;
     cursor: pointer;
 }
 
 .logo-add-produtos {
-    width: 123px;
+    width: 11.80rem;
     height: auto;
     position: absolute;
-    top: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
 }
 
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1820px) {
     .itens-cadastro {
-        width: 100%;
-    }
-
-    .logo-add-produtos {
-        width: 180px;
-        top: 90px;
+        width: 25rem;
     }
 
     .icone-voltar {
-        top: 15px;
-        left: 10px;
+        top: 0.938rem;
+        left: 0.625rem;
+    }
+}
 
+@media screen and (max-width: 1350px) {
+    .logo-add-produtos {
+        width: 12.5rem;
+        top: 3.125rem;
+    }
+
+    .icone-voltar {
+        top: 0.9375rem;
+        left: 0.625rem;
     }
 
     .itens-cadastro {
-        margin: 5px;
-        width: 400px;
+        width: 25rem;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
-
-
-    .itens-cadastro {
-        width: 100%;
-    }
-
     .logo-add-produtos {
-        width: 180px;
-        top: 90px;
+        width: 12.5rem;
+        top: 3.125rem;
     }
 
     .icone-voltar {
-        top: 15px;
-        left: 10px;
-
+        top: 0.9375rem;
+        left: 0.625rem;
     }
 
     .itens-cadastro {
-        margin: 5px;
-        width: 350px;
+        width: 25rem;
     }
-
 }
-
-
-
-
 
 @media screen and (max-width: 480px) {
     .container-add-produtos {
@@ -141,14 +136,12 @@ input[type="file"] {
     }
 
     .logo-add-produtos {
-        width: 180px;
-        top: 90px;
+        width: 12.5rem;
+        top: 5.625rem;
     }
 
     .icone-voltar {
-        top: 15px;
-        left: 10px;
-
+        top: 0.9375rem;
+        left: 0.625rem;
     }
-
 }
