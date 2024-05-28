@@ -8,7 +8,13 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="icon" href="./images/logo.png" />
     <title>Mercearia Bau</title>
   </head>
   <body>
@@ -22,44 +28,56 @@
           <a href="#" class="icon-user">
             <img src="./images/user.png" alt="Botão do usuário" />
           </a>
+          <a href="#" class="icon-bag">
+            <img src="/images/bag.png" alt="Sacola de compras" />
+          </a>
         </div>
       </nav>
     </header>
 
-    <h2>Ofertas da semana!</h2>
-    <section class="produtos wrap" id="produtos">
-      <!-- <div class="produto">
-        <span class="oferta">Oferta</span>
-        <img class="prod-image" src="./images/Banana.jpg" alt="Banana" />
-        <h3 class="prod-title">Banana</h3>
-        <p class="preco-antigo">R$18,00</p>
-        <p class="preco-atual">R$6,00</p>
-      </div>
-
-      <div class="produto">
-        <span class="oferta">Oferta</span>
-        <img class="prod-image" src="./images/Maça.jpg" alt="Maça" />
-        <h3 class="prod-title">Abacaxi</h3>
-        <p class="preco-antigo">R$18,00</p>
-        <p class="preco-atual">R$6,00</p>
-      </div>
-
-      <div class="produto">
-        <span class="oferta">Oferta</span>
-        <img class="prod-image" src="./images/SabaoPó.jpg" alt="Maça" />
-        <h3 class="prod-title">Abacaxi</h3>
-        <p class="preco-antigo">R$18,00</p>
-        <p class="preco-atual">R$6,00</p>
-      </div>
-
-      <div class="produto">
-        <span class="oferta">Oferta</span>
-        <img class="prod-image" src="./images/Abacaxi.jpg" alt="Maça" />
-        <h3 class="prod-title">Abacaxi</h3>
-        <p class="preco-antigo">R$18,00</p>
-        <p class="preco-atual">R$6,00</p>
-      </div> -->
+    <section class="banner-container">
+      <img src="./images/2.png" alt="Banner" class="banner-image" />
     </section>
+
+    <div class="title">
+      <h2>Ofertas da <span class="semana">semana!</span></h2>
+    </div>
+
+    <section class="produtos wrap" id="produtos"></section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="service">
+          <h3>Atendimento</h3>
+          <p>
+            <i class="bx bxl-whatsapp"></i>
+            (55)99607-6128
+          </p>
+          <p>
+            <i class="bx bx-envelope"></i>
+            MerceariaBau@gmail.com
+          </p>
+          <p>
+            <span class="material-icons"> schedule </span> Horário de
+            Atendimento:
+          </p>
+          <p>Segunda-Feira: 08:00 - 21:30</p>
+          <p>Sábado: 08:30 - 22:00</p>
+        </div>
+
+        <div class="credit-cards">
+          <h3>Forma de Pagamento</h3>
+          <div class="cards">
+            <img src="./images/aleleo.png" alt="" />
+            <img src="./images/dinheiro.png" alt="" />
+            <img src="./images/elo.png" alt="" />
+            <img src="./images/hipercard.png" alt="" />
+            <img src="./images/mastercard.png" alt="" />
+            <img src="./images/visa.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/home.js" defer></script>
   </body>
 </html>

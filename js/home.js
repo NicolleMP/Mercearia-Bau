@@ -10,7 +10,7 @@ const produtos = [
     {
         "id": 2,
         "nome": "Bananas",
-        "imagem": "https://i.postimg.cc/H8zcWVCg/Banana.png",
+        "imagem": "https://i.postimg.cc/c6yQmn9r/Banana.png",
         "preco": 7.00,
         "desconto": 15
     },
@@ -73,6 +73,7 @@ const produtos = [
 ];
 
 
+
 function calcularPreco(precoNormal, desconto) {
     return precoNormal - (precoNormal * (desconto / 100));
 }
@@ -84,12 +85,26 @@ function exibirProdutosNaTela() {
         const precoAtual = calcularPreco(produto.preco, produto.desconto);
         promocao.innerHTML += `
         <div class="produto">
+        <span class="oferta">Oferta</span>
           <img class="prod-image" src="${produto.imagem}" alt="${produto.nome}" />
           <h3 class="prod-title">${produto.nome}</h3>
           <p class="preco-antigo">R$${produto.preco.toFixed(2)}</p>
           <p class="preco-atual">R$${precoAtual.toFixed(2)}</p>
-        </div>
+          <i class="bx bx-heart heart-icon"></i>        
+          </div>
       `;
     });
 }
-exibirProdutosNaTela();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    exibirProdutosNaTela();
+
+    const heartIcons = document.querySelectorAll('.heart-icon');
+    heartIcons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            icon.classList.toggle('bx-heart');
+            icon.classList.toggle('bxs-heart');
+        });
+    });
+});
