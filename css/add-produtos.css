@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1.25rem;
-    width: 18.75rem;
+    width: 37.5rem;
 
 }
 
@@ -51,7 +51,7 @@ input[type="file"] {
     margin: 0.313rem;
     padding: 0.625rem;
     border: none;
-    border-radius: 0.313rem;
+    border-radius: 0.938rem;
     width: 18.75rem;
 }
 
@@ -61,87 +61,56 @@ input[type="file"] {
     color: var(--cinza-claro);
     padding: 0.5rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.938rem;
     margin-top: 0.75rem;
     cursor: pointer;
+    font-weight: 600;
 
 }
 
-.icone-voltar {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.625rem;
-    height: auto;
-    cursor: pointer;
-}
 
 .logo-add-produtos {
-    width: 11.80rem;
+    width: 15.625rem;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 4.375rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    cursor: pointer;
 
 }
 
 
-@media screen and (max-width: 1820px) {
+@media (max-width: 767px) {
     .itens-cadastro {
-        width: 25rem;
+        width: 90%;
     }
 
-    .icone-voltar {
-        top: 0.938rem;
-        left: 0.625rem;
-    }
-}
-
-@media screen and (max-width: 1350px) {
     .logo-add-produtos {
         width: 12.5rem;
         top: 3.125rem;
     }
-
-    .icone-voltar {
-        top: 0.9375rem;
-        left: 0.625rem;
-    }
-
-    .itens-cadastro {
-        width: 25rem;
-    }
 }
 
-@media screen and (max-width: 768px) {
-    .logo-add-produtos {
-        width: 12.5rem;
-        top: 3.125rem;
-    }
-
-    .icone-voltar {
-        top: 0.9375rem;
-        left: 0.625rem;
-    }
-
+@media (min-width: 768px) and (max-width: 1023px) {
     .itens-cadastro {
-        width: 25rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container-add-produtos {
-        width: 100%;
+        width: 80%;
     }
 
     .logo-add-produtos {
-        width: 12.5rem;
-        top: 5.625rem;
+        width: 15rem;
+        top: 3.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .itens-cadastro {
+        width: 70%;
     }
 
-    .icone-voltar {
-        top: 0.9375rem;
-        left: 0.625rem;
+    .logo-add-produtos {
+        width: 15.625rem;
+        top: 4.375rem;
     }
 }
