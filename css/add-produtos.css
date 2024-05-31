@@ -1,116 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --marrom-alaranjada: #a6874e;
-    --marrom-escuro: #593c22;
-    --marrom-claro: #bfa77a;
-    --marrom-profundo: #402320;
-    --cinza-claro: #f2f2f2;
-    --branco: #ffffff;
-    --font-poppins: "Poppins", sans-serif;
+  --marrom-alaranjada: #a6874e;
+  --marrom-escuro: #593c22;
+  --marrom-claro: #bfa77a;
+  --marrom-profundo: #402320;
+  --cinza-claro: #f2f2f2;
+  --branco: #ffffff;
+  --font-poppins: "Poppins", sans-serif;
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-poppins);
-
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins);
 }
 
 .container-add-produtos {
-    background-color: var(--marrom-alaranjada);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
+  background-color: var(--marrom-alaranjada);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
 
 .itens-cadastro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.25rem;
-    width: 37.5rem;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+  width: 37.5rem;
 }
 
-
 .title-add-produtos {
-    color: var(--marrom-escuro);
-    margin-bottom: 0.75rem;
-    text-align: center;
+  color: var(--marrom-escuro);
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 input[type="text"],
 input[type="file"] {
-    background-color: var(--cinza-claro);
-    color: var(--marrom-escuro);
-    margin: 0.313rem;
-    padding: 0.625rem;
-    border: none;
-    border-radius: 0.938rem;
-    width: 18.75rem;
+  background-color: var(--cinza-claro);
+  color: var(--marrom-escuro);
+  margin: 0.313rem;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 0.938rem;
+  width: 18.75rem;
 }
 
 .btn-add-produtos {
-    width: 12.75rem;
-    background-color: var(--marrom-escuro);
-    color: var(--cinza-claro);
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.938rem;
-    margin-top: 0.75rem;
-    cursor: pointer;
-    font-weight: 600;
-
+  width: 12.75rem;
+  background-color: var(--marrom-escuro);
+  color: var(--cinza-claro);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.938rem;
+  margin-top: 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
 }
-
 
 .logo-add-produtos {
-    width: 15.625rem;
-    height: auto;
-    position: absolute;
-    top: 4.375rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    cursor: pointer;
-
+  width: 15.625rem;
+  height: auto;
+  position: absolute;
+  top: 4.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  cursor: pointer;
 }
-
 
 @media (max-width: 767px) {
-    .itens-cadastro {
-        width: 90%;
-    }
+  .itens-cadastro {
+    width: 90%;
+  }
 
-    .logo-add-produtos {
-        width: 12.5rem;
-        top: 3.125rem;
-    }
+  .itens-cadastro input {
+    padding: 0.625rem;
+    border: none;
+    border-radius: 0.938rem;
+    width: 15rem;
+  }
+
+  .title-add-produtos {
+    font-size: 1.9rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+
+  .logo-add-produtos {
+    width: 9.5rem;
+    top: 1.8rem;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .itens-cadastro {
-        width: 80%;
-    }
+@media (min-width: 767px) and (max-width: 1023px) {
+  .itens-cadastro {
+    width: 80%;
+  }
 
-    .logo-add-produtos {
-        width: 15rem;
-        top: 3.75rem;
-    }
+  .logo-add-produtos {
+    width: 12rem;
+    top: 0rem;
+  }
+
+  .title-add-produtos {
+    margin: 0;
+  }
 }
 
-@media (min-width: 1024px) {
-    .itens-cadastro {
-        width: 70%;
-    }
+@media (min-width: 1023px) {
+  .itens-cadastro {
+    width: 70%;
+  }
 
-    .logo-add-produtos {
-        width: 15.625rem;
-        top: 4.375rem;
-    }
+  .logo-add-produtos {
+    width: 12rem;
+    top: 0;
+  }
+
+  .title-add-produtos {
+    margin: 0;
+  }
 }
