@@ -179,7 +179,7 @@ form .signup-link a:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
-        max-width: 40rem;
+        max-width: 30rem;
         margin: 10vh auto;
     }
 
@@ -207,6 +207,51 @@ form .signup-link a:hover {
 
     .wrapper form .button input {
         font-size: 1.125rem;
+    }
+
+    .wrapper form .signup-link {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1279px) {
+    .container {
+        max-width: 30rem;
+        margin: 10vh auto;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 35rem;
+        margin: 10vh auto;
+    }
+
+    .wrapper .title {
+        font-size: 2rem;
+        height: 5.625rem;
+    }
+
+    .wrapper form {
+        padding: 1.875rem 1.5625rem 1.5625rem 1.5625rem;
+    }
+
+    .wrapper form .row input {
+        font-size: 1rem;
+    }
+
+    .wrapper form .row i {
+        width: 2.9375rem;
+        font-size: 1rem;
+    }
+
+    .wrapper form .pass a {
+        font-size: 1rem;
+    }
+
+    .wrapper form .button input {
+        font-size: 1.25rem;
     }
 
     .wrapper form .signup-link {
