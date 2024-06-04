@@ -14,6 +14,17 @@ function calcularPreco(precoNormal, desconto) {
     return precoNormal - (precoNormal * (desconto / 100));
 }
 
+function isAdmin() {
+    return localStorage.getItem('isAdmin') === 'true';
+}
+
+function removerProdutos(id) {
+    const produtosSalvos = JSON.parse(localStorage.getItem('produtos')) || [];
+    const novosProdutos = produtosSalvos.filter(produto => produto.id !== id);
+    localStorage.setItem('produtos', JSON.stringify(novosProdutos));
+    exibirProdutosNaTela();
+}
+
 function exibirProdutosNaTela() {
     carregarProdutos().then(produtos => {
         const promocao = document.getElementById('produtos');
@@ -29,11 +40,11 @@ function exibirProdutosNaTela() {
                     <p class="preco-antigo">R$${produto.preco.toFixed(2)}</p>
                     <p class="preco-atual">R$${precoAtual.toFixed(2)}</p>
                     <i class="bx bx-heart heart-icon"></i>
+                    ${isAdmin() ? '<button class = "btn-remove">Remover</button>' : ''}
                 </div>
             `;
         });
 
-        // Adiciona eventos aos ícones de coração
         const heartIcons = document.querySelectorAll('.heart-icon');
         heartIcons.forEach(icon => {
             icon.addEventListener('click', function () {
@@ -42,9 +53,19 @@ function exibirProdutosNaTela() {
             });
         });
     });
+
+
+    if (isAdmin()) {
+        const removebuttons = document.querySelectorAll('.btn-remove');
+        removebuttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const produtosId = parseInt(button.parentElement.getAttribute('data-id'));
+                removerProdutos(produtosId);
+            });
+        });
+    }
 }
 
-// Carrega produtos ao carregar a página
 document.addEventListener('DOMContentLoaded', function () {
     exibirProdutosNaTela();
 });
