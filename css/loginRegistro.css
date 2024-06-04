@@ -136,3 +136,42 @@ form .button input:hover {
 form .signup-link a:hover {
     text-decoration: underline;
 }
+
+
+
+@media (max-width: 414px) {
+    .container {
+        margin: 5vh auto;
+        padding: 0 1rem;
+    }
+
+    .wrapper .title {
+        font-size: 1.5rem;
+        height: 4.375rem;
+    }
+
+    .wrapper form {
+        padding: 1.25rem 1rem 1rem 1rem;
+    }
+
+    .wrapper form .row input {
+        font-size: 0.9rem;
+    }
+
+    .wrapper form .row i {
+        width: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .wrapper form .pass a {
+        font-size: 0.9rem;
+    }
+
+    .wrapper form .button input {
+        font-size: 1rem;
+    }
+
+    .wrapper form .signup-link {
+        font-size: 0.9rem;
+    }
+}
