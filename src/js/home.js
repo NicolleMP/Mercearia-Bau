@@ -5,7 +5,7 @@ function carregarProdutos() {
         .then(response => response.json())
         .then(data => data.concat(produtosSalvos))
         .catch(error => {
-            console.error("Erro ao carregar produtos na tela: ", error);
+            console.error("Erro ao carregar produtos: ", error);
             return produtosPadrao.concat(produtosSalvos);
         });
 }
@@ -33,14 +33,14 @@ function exibirProdutosNaTela() {
         produtos.forEach(produto => {
             const precoAtual = calcularPreco(produto.preco, produto.desconto);
             promocao.innerHTML += `
-                <div class="produto">
+                <div class="produto" data-id="${produto.id}">
                     <span class="oferta">Oferta</span>
                     <img class="prod-image" src="${produto.imagem}" alt="${produto.nome}" />
                     <h3 class="prod-title">${produto.nome}</h3>
                     <p class="preco-antigo">R$${produto.preco.toFixed(2)}</p>
                     <p class="preco-atual">R$${precoAtual.toFixed(2)}</p>
                     <i class="bx bx-heart heart-icon"></i>
-                    ${isAdmin() ? '<button class = "btn-remove">Remover</button>' : ''}
+                    ${isAdmin() ? '<button class="btn-remove">Remover</button>' : ''}
                 </div>
             `;
         });
@@ -52,19 +52,26 @@ function exibirProdutosNaTela() {
                 icon.classList.toggle('bxs-heart');
             });
         });
-    });
 
-
-    if (isAdmin()) {
-        const removebuttons = document.querySelectorAll('.btn-remove');
-        removebuttons.forEach(button => {
-            button.addEventListener('click', function () {
-                const produtosId = parseInt(button.parentElement.getAttribute('data-id'));
-                removerProdutos(produtosId);
+        if (isAdmin()) {
+            const removeButtons = document.querySelectorAll('.btn-remove');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const produtoId = parseInt(button.parentElement.getAttribute('data-id'));
+                    removerProdutos(produtoId);
+                });
             });
-        });
-    }
+        }
+    });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const iconAdd = document.getElementById('icon-add');
+    if (iconAdd) {
+        iconAdd.style.display = isAdmin() ? 'block' : 'none';
+    }
+    exibirProdutosNaTela();
+})
 
 document.addEventListener('DOMContentLoaded', function () {
     exibirProdutosNaTela();

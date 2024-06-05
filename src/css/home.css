@@ -37,6 +37,12 @@ body {
   height: 6rem;
 }
 
+.icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
 .icons a {
   padding: 1rem;
 }
@@ -53,7 +59,7 @@ body {
 .banner-image {
   width: 100%;
   height: auto;
-  max-height: 35rem; /* Ajuste a altura máxima conforme necessário */
+  max-height: 35rem;
   object-fit: cover;
 }
 
