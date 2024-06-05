@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (username === 'admin' && password === 'admin') {
                 localStorage.setItem('isAdmin', 'true');
                 alert('Login bem-sucedido como administrador!');
-                window.location.href = 'homepage.html';
+                window.location.href = 'home.html';
             } else if (storedUser && storedUser.name === username && storedUser.password === password) {
                 localStorage.setItem('isAdmin', 'false');
                 alert('Login bem-sucedido!');
-                window.location.href = 'homepage.html';
+                window.location.href = 'home.html';
             } else {
                 alert('Nome de usuário ou senha incorretos.');
             }

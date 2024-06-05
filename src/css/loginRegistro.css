@@ -1,260 +1,264 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 ::selection {
-    background: #BFA77A;
-}
-
-.image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2.5rem;
+  background: #bfa77a;
 }
 
 .container {
-    max-width: 27.5rem;
-    padding: 0 1.25rem;
-    margin: 10vh auto;
+  max-width: 27.5rem;
+  padding: 0 2rem;
+  margin: 10vh auto;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  margin-bottom: 1rem;
+  width: 10.5rem;
+  height: 10.5rem;
 }
 
 .wrapper {
-    width: 100%;
-    background: #fff;
-    border-radius: 0.3125rem;
-    box-shadow: 0 0.25rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: #fff;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.25rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.1);
 }
 
 .wrapper .title {
-    height: 5.625rem;
-    background: #BFA77A;
-    border-radius: 0.3125rem 0.3125rem 0 0;
-    color: #fff;
-    font-size: 1.875rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 5.625rem;
+  background: #bfa77a;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper form {
-    padding: 1.875rem 1.5625rem 1.5625rem 1.5625rem;
+  padding: 1.875rem 1.5625rem 1.5625rem 1.5625rem;
 }
 
 .wrapper form .row {
-    height: 2.8125rem;
-    margin-bottom: 0.9375rem;
-    position: relative;
+  height: 2.8125rem;
+  margin-bottom: 0.9375rem;
+  position: relative;
 }
 
 .wrapper form .row input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    padding-left: 3.75rem;
-    border-radius: 0.3125rem;
-    border: 0.0625rem solid lightgrey;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 3.75rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid lightgrey;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 form .row input:focus {
-    border-color: #BFA77A;
-    box-shadow: 0 0 0.3125rem #BFA77A;
+  border-color: #bfa77a;
+  box-shadow: 0 0 0.3125rem #bfa77a;
 }
 
 form .row input::placeholder {
-    color: #999;
+  color: #999;
 }
 
 .wrapper form .row i {
-    position: absolute;
-    width: 2.9375rem;
-    height: 100%;
-    color: #fff;
-    font-size: 1.125rem;
-    background: #BFA77A;
-    border: 0.0625rem solid #BFA77A;
-    border-radius: 0.3125rem 0 0 0.3125rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  width: 2.9375rem;
+  height: 100%;
+  color: #fff;
+  font-size: 1.125rem;
+  background: #bfa77a;
+  border: 0.0625rem solid #bfa77a;
+  border-radius: 0.3125rem 0 0 0.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper form .pass {
-    margin: -0.5rem 0 1.25rem 0;
+  margin: -0.5rem 0 1.25rem 0;
 }
 
 .wrapper form .pass a {
-    color: #BFA77A;
-    font-size: 1.0625rem;
-    text-decoration: none;
+  color: #bfa77a;
+  font-size: 1.0625rem;
+  text-decoration: none;
 }
 
 .wrapper form .pass a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .wrapper form .button input {
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding-left: 0;
-    background: #BFA77A;
-    border: 0.0625rem solid #BFA77A;
-    cursor: pointer;
-    width: 100%;
-    padding: 0.625rem 0;
-    border-radius: 0.3125rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-left: 0;
+  background: #bfa77a;
+  border: 0.0625rem solid #bfa77a;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.625rem 0;
+  border-radius: 0.3125rem;
 }
 
 form .button input:hover {
-    background: #a8906a;
+  background: #a8906a;
 }
 
 .wrapper form .signup-link {
-    text-align: center;
-    margin-top: 1.25rem;
-    font-size: 1.0625rem;
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 1.0625rem;
 }
 
 .wrapper form .signup-link a {
-    color: #BFA77A;
-    text-decoration: none;
+  color: #bfa77a;
+  text-decoration: none;
 }
 
 form .signup-link a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
-
 
 @media (max-width: 414px) {
-    .container {
-        margin: 5vh auto;
-        padding: 0 1rem;
-    }
+  .container {
+    max-width: 30rem;
+    margin: 5vh auto;
+  }
 
-    .wrapper .title {
-        font-size: 1.5rem;
-        height: 4.375rem;
-    }
+  .wrapper .title {
+    font-size: 1.5rem;
+    height: 4.375rem;
+  }
 
-    .wrapper form {
-        padding: 1.25rem 1rem 1rem 1rem;
-    }
+  .wrapper form {
+    padding: 1.25rem 1rem 1rem 1rem;
+  }
 
-    .wrapper form .row input {
-        font-size: 0.9rem;
-    }
+  .wrapper form .row input {
+    font-size: 0.9rem;
+  }
 
-    .wrapper form .row i {
-        width: 2.5rem;
-        font-size: 0.9rem;
-    }
+  .wrapper form .row i {
+    width: 2.5rem;
+    font-size: 0.9rem;
+  }
 
-    .wrapper form .pass a {
-        font-size: 0.9rem;
-    }
+  .wrapper form .pass a {
+    font-size: 0.9rem;
+  }
 
-    .wrapper form .button input {
-        font-size: 1rem;
-    }
+  .wrapper form .button input {
+    font-size: 1rem;
+  }
 
-    .wrapper form .signup-link {
-        font-size: 0.9rem;
-    }
+  .wrapper form .signup-link {
+    font-size: 0.9rem;
+  }
 }
 
+@media (min-width: 413px) and (max-width: 768px) {
+  .container {
+    max-width: 30rem;
+    margin: 5vh auto;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        max-width: 30rem;
-        margin: 10vh auto;
-    }
+  .container {
+    max-width: 30rem;
+    margin: 5vh auto;
+  }
 
-    .wrapper .title {
-        font-size: 2rem;
-        height: 5.625rem;
-    }
+  .wrapper .title {
+    font-size: 2rem;
+    height: 5.625rem;
+  }
 
-    .wrapper form {
-        padding: 2rem 1.5rem 1.5rem 1.5rem;
-    }
+  .wrapper form {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
 
-    .wrapper form .row input {
-        font-size: 1rem;
-    }
+  .wrapper form .row input {
+    font-size: 1rem;
+  }
 
-    .wrapper form .row i {
-        width: 2.9375rem;
-        font-size: 1rem;
-    }
+  .wrapper form .row i {
+    width: 2.9375rem;
+    font-size: 1rem;
+  }
 
-    .wrapper form .pass a {
-        font-size: 1rem;
-    }
+  .wrapper form .pass a {
+    font-size: 1rem;
+  }
 
-    .wrapper form .button input {
-        font-size: 1.125rem;
-    }
+  .wrapper form .button input {
+    font-size: 1.125rem;
+  }
 
-    .wrapper form .signup-link {
-        font-size: 1rem;
-    }
+  .wrapper form .signup-link {
+    font-size: 1rem;
+  }
 }
 
-@media (min-width: 1025px) and (max-width:1279px) {
-    .container {
-        max-width: 30rem;
-        margin: 10vh auto;
-    }
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .container {
+    max-width: 30rem;
+    margin: 8vh auto;
+  }
 }
-
 
 @media (min-width: 1280px) {
-    .container {
-        max-width: 35rem;
-        margin: 10vh auto;
-    }
+  .container {
+    max-width: 32rem;
+    margin: 7vh auto;
+  }
 
-    .wrapper .title {
-        font-size: 2rem;
-        height: 5.625rem;
-    }
+  .wrapper .title {
+    font-size: 2rem;
+    height: 5.625rem;
+  }
 
-    .wrapper form {
-        padding: 1.875rem 1.5625rem 1.5625rem 1.5625rem;
-    }
+  .wrapper form {
+    padding: 1.875rem 1.5625rem 1.5625rem 1.5625rem;
+  }
 
-    .wrapper form .row input {
-        font-size: 1rem;
-    }
+  .wrapper form .row input {
+    font-size: 1rem;
+  }
 
-    .wrapper form .row i {
-        width: 2.9375rem;
-        font-size: 1rem;
-    }
+  .wrapper form .row i {
+    width: 2.9375rem;
+    font-size: 1rem;
+  }
 
-    .wrapper form .pass a {
-        font-size: 1rem;
-    }
+  .wrapper form .pass a {
+    font-size: 1rem;
+  }
 
-    .wrapper form .button input {
-        font-size: 1.25rem;
-    }
+  .wrapper form .button input {
+    font-size: 1.25rem;
+  }
 
-    .wrapper form .signup-link {
-        font-size: 1rem;
-    }
+  .wrapper form .signup-link {
+    font-size: 1rem;
+  }
 }
