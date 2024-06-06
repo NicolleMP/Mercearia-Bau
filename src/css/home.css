@@ -64,13 +64,13 @@ body {
 }
 
 .title {
+  background: var(--marrom-claro);
   text-align: center;
   margin-top: 15px;
 }
 .title h2 {
   font-size: 2.5rem;
   color: black;
-  text-decoration: underline red;
 }
 
 .produtos {
@@ -148,6 +148,32 @@ body {
   margin-right: 2rem;
 }
 
+.btn-remove {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.625rem;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: var(--cinza-claro);
+  border-radius: 0.313rem;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.produto:hover .btn-remove {
+  opacity: 1;
+}
+
+.btn-remove:hover {
+  background: var(--marrom-claro);
+  color: red;
+}
+
 .heart-icon {
   position: absolute;
   top: 86%;
@@ -158,6 +184,11 @@ body {
 
 .bxs-heart {
   color: red !important;
+}
+
+.detail {
+  height: 46.4px;
+  background: var(--marrom-claro);
 }
 
 .footer-container {
@@ -252,20 +283,24 @@ body {
     height: 7rem;
   }
 
+  .btn-remove {
+    padding: 0.2rem;
+  }
+
   .heart-icon {
     top: 81%;
     right: 1rem;
     font-size: 1.6rem;
   }
 
-  .btn-remove {
-    background-color: #402320;
+  .detail {
+    height: 27.2px;
   }
 
   .footer-container {
     flex-direction: column;
     align-items: center;
-    left: 20px;
+    left: 10px;
   }
 
   .service,
