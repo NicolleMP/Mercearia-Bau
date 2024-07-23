@@ -128,7 +128,7 @@ body {
 
 .prod-title {
   color: var(--marrom-claro);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0.5rem;
   font-weight: 700;
 }
@@ -136,14 +136,14 @@ body {
 .preco-antigo {
   text-decoration-line: line-through;
   color: var(--marrom-claro);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .preco-atual {
   color: var(--marrom-claro);
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 600;
   margin-right: 2rem;
 }
@@ -267,7 +267,7 @@ body {
   }
 
   .prod-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .preco-antigo {
@@ -345,6 +345,18 @@ body {
     width: 8.5rem;
     height: 7rem;
   }
+
+  .prod-title {
+    font-size: 1.1rem;
+  }
+
+  .preco-antigo {
+    font-size: 1rem;
+  }
+
+  .preco-atual {
+    font-size: 1.6rem;
+  }
 }
 
 @media ((min-width: 860px) and (max-width: 1024px)) {
@@ -360,6 +372,18 @@ body {
   .prod-image {
     width: 10rem;
     height: 10rem;
+  }
+
+  .prod-title {
+    font-size: 1.1rem;
+  }
+
+  .preco-antigo {
+    font-size: 1rem;
+  }
+
+  .preco-atual {
+    font-size: 1.6rem;
   }
 
   .heart-icon {
