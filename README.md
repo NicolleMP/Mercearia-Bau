@@ -2,7 +2,7 @@
 [JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript
 [CSS__BADGE]:https://img.shields.io/badge/Css-000?style=for-the-badge&logo=css
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
-[PROJECT__URL]:https://github.com/Patrick-1810/my-portifolio
+[PROJECT__URL]:https://github.com/NicolleMP/Mercearia-Bau
 
 <h1 align="center" style="font-weight: bold;">Projeto Mercearia Baú 💻</h1>
 
